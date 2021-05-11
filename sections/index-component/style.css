@@ -288,7 +288,7 @@ h3.heading{
 /*--project section--*/
 
 .project{
-  background-image: url(../img/project.jpg);
+  /* background-image: url(../img/project.jpg); */
   z-index: -1;
 
 }
