@@ -1,0 +1,102 @@
+.cards {
+	display: flex;
+	overflow-x: scroll;
+}
+
+.card-body {
+	background: white;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.137);
+	transition: 0.2s;
+}
+
+.cards-header {
+	color: black;
+}
+
+.card-body:not(:first-child) {
+	margin-left: -2rem;
+}
+
+.card-body:not(:last-child):hover, .card-body:not(:last-child):focus-within {
+	transform: translateY(-1rem);
+}
+
+.card-body:not(:last-child):hover~.card-body, .card-body:not(:last-child):focus-within~.card-body {
+	transform: translateX(2rem);
+}
+
+.cards::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+
+.cards::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 10px;
+	border-radius: 10px;
+	background: black;
+}
+
+.cards::-webkit-scrollbar-thumb {
+	width: 2px;
+	border-radius: 10px;
+	background: #1ebba3;
+	box-shadow: inset 0 0 6px #1ebba3;
+}
+
+@media (max-width: 767px) {
+	.cards {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		border-radius: 1rem;
+		
+	}
+	::-webkit-scrollbar {
+		width: 12px;
+		height: 12px;
+	}
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 10px;
+		border-radius: 10px;
+		background: black;
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background: #1ebba3;
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	}
+	::-webkit-scrollbar-button:horizontal:decrement:hover {
+		border-radius: 10px;
+		background: #1ebba3;
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	}
+}
+
+@media (max-width: 425px) {
+	.cards {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		border-radius: 1rem;
+		
+	}
+	::-webkit-scrollbar {
+		width: 12px;
+		height: 12px;
+	}
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 10px;
+		border-radius: 10px;
+		background: black;
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background: #1ebba3;
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	}
+	::-webkit-scrollbar-button:horizontal:decrement:hover {
+		border-radius: 10px;
+		background: #1ebba3;
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	}
+}

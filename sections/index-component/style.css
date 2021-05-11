@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  
+    /* background-color: black;
+    color: #fff; */
+  
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+
+
+
+body::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 10px;
+  background: black
+}
+
+body::-webkit-scrollbar-thumb {
+	width: 2px;
+	border-radius: 10px;
+	background: #1ebba3;
+	box-shadow: inset 0 0 6px #176156;
+}
+
+.navbar-brand{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.6rem;
+}
+
+.offset:before{
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem; 
+}
+
+
+
+.bounce.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+
+}
+
+ .bounce::before,
+.bounce::after {
+  position: absolute;
+  top: -23px;
+  content: "";
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.bounce::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  transform:         rotate(-45deg);
+}
+
+.bounce::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  transform:         rotate(45deg);
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/*-- Navigation --*/
+
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+.navbar-brand img{
+  height: 2rem;
+}
+
+.navbar-nav li{
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #1ebba3;
+}
+
+/*--Landing Page --*/
+
+.home-inner{
+  background-image: url(../img/logo1.jpg)
+}
+
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+  
+}
+
+
+
+.caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+
+}
+
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/*-- education--*/
+
+.narrow{
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+
+}
+.narrow h1{
+  font-size: 2.4rem;
+
+}
+.btn-secondary{
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: .6rem 1.2rem;
+  margin: 1rem;
+  color: white;
+  background-color: #1ebba3;
+  border-color: #1ebba3;
+
+}
+.btn-secondary:hover{
+  
+  background-color: #189582;
+  border-color: #1ebba3;
+
+}
+
+.jumbotron{
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem; 
+  border-radius: 0;
+  
+
+}
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+  width: 3rem;
+  height: .2rem;
+  background-color: #1ebba3;
+  margin: 0 auto 2rem;
+
+}
+
+.feature svg.svg-inline--fa{
+  color: #1ebba3
+}
+
+/*--skills section--*/
+
+.fixed{
+  background-image: url(../img/skills.png);
+  z-index: -1;
+
+}
+.dark{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2rem 2rem;
+
+ 
+
+}
+
+.fixed-background h2{
+
+  margin-bottom: 2rem;
+
+  font-size: 3.8rem;
+  font-weight: 500;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+
+
+/*--education section--*/
+
+.education{
+  background-image: url(../img/education.jpg);
+  z-index: -1;
+
+}
+
+/*--education section--*/
+
+.experience{
+  background-image: url(../img/experience.png);
+  z-index: -1;
+
+}
+
+/*--certifications section --*/
+
+.certification{
+  background-image: url(../img/certification.jpg);
+  z-index: -1;
+}
+
+/*--project section--*/
+
+.project{
+  background-image: url(../img/project.jpg);
+  z-index: -1;
+
+}
+
+.underline{
+
+  color: black;
+  border: 1px solid #40474e;
+}
+
+
+
+/*--footer--*/
+
+footer{
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+
+}
+footer img{
+  height: 3rem;
+  margin: 1.5rem;
+}
+
+footer a{
+  color: white;
+}
+
+footer svg.svg-inline--fa{
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover{
+  color: #1ebba3!important;
+}
+
+footer a:hover{
+  color: #1ebba3!important;
+}
+hr.socket{
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+  .caption h1{
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem
+  }
+  
+  
+  
+  .caption h3{
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  
+  }
+  
+  .btn-lg{
+
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .narrow h1{
+    font-size: 1.5rem;
+  }
+
+  .fixed-background h2{
+    font-size: 2.8rem;
+  }
+  
+
+}
+
+@media (max-width: 500px){
+  .fixed-background h2{
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .fixed-background h2{
+    font-size: 2rem;
+  }
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
